@@ -1,11 +1,96 @@
+@import './addition/mixin';
+
 .container {
   width: 1140px;
   margin: 0 auto;
 }
 
-.divider {
-  width: 60px;
-  height: 3px;
-  background-color: var(--main-color);
-  margin: 25px auto 0px auto;
+.promo {
+  position: relative;
+  padding-top: 205px;
+  min-height: 100vh;
+  background: url('../img/background/main_background.jpg') no-repeat 50% / cover;
+}
+
+.title {
+  margin-top: 14px;
+  font-size: var(--title_fz50-size);
+  font-weight: var(--title_fz50-weight);
+  line-height: var(--title-height);
+}
+
+.subTitle {
+  position: relative;
+  padding: 2px 0 0 4px;
+  font-weight: var(--title-weight);
+  font-size: var(--title_fz16-size);
+  line-height: var(--title_fz16-height);
+  z-index: 1;
+  @include before_circle;
+}
+
+.btnWrapper {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.btnLinkColored {
+  color: var(--black-color);
+  font-weight: var(--title-weight);
+  @include buttonColored;
+  @include hover_effect;
+}
+
+.btnLink {
+  margin-left: 15px;
+  padding: 12px 25px;
+  color: var(--black-color);
+  font-weight: vat(--title-weight);
+  transition: none;
+  box-shadow: none;
+}
+
+// ! Display width - 1200px
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+// ! Display width - 992px
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+// ! Display width - 768px
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .title {
+    margin-top: 24px;
+    width: 300px;
+    line-height: var(--title_fz50-height);
+  }
+}
+
+// ! Display width - 576px
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .promo {
+    background: url('../img/background/main_background.jpg') no-repeat 57% / cover;
+  }
+
+  .btnWrapper {
+    margin-top: 30px;
+  }
 }
