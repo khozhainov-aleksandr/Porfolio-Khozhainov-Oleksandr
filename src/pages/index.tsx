@@ -1,6 +1,5 @@
 import Link from 'next/link'
-import Image from 'next/image'
-
+import { SocialNetworkSidebar } from '@/components/SocialNetworkSidebar';
 import styles from '@/styles/Home.module.scss'
 
 export default function Home() {
@@ -27,6 +26,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
+      <SocialNetworkSidebar />
     </div>
   )
 }
