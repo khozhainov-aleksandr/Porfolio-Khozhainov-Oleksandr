@@ -1,0 +1,49 @@
+@mixin before_circle {
+  &:before {
+    content: '';
+    position: absolute;
+    top: -25%;
+    left: -10px;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background: var(--main-color);
+    z-index: -1;
+  }
+}
+
+@mixin hover_effect {
+  transition: all 0.5s;
+
+  &:hover {
+    color: var(--black-color);
+    text-decoration: none;
+    box-shadow:
+      5px 5px 10px 0px
+      rgba(0, 0, 0, 0.5);
+  }
+}
+
+// Title
+@mixin section_title {
+  position: relative;
+  text-align: center;
+  @include before_circle;
+  &:before {
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@mixin section_subTitle {
+  text-align: center;
+}
+
+// Button
+@mixin buttonColored {
+  padding: 12px 25px;
+  height: 45px;
+  background: var(--main-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
