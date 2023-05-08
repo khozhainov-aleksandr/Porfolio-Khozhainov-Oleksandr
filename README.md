@@ -6,6 +6,7 @@
 - Next.JS Routing
 - React
 - TypeScript
+- React-Icons
 - CSS Modules
 - SCSS style
 - ESLint
