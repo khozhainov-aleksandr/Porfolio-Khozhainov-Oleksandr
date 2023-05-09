@@ -1,14 +1,19 @@
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Image from 'next/image';
 import { socialNetworkData, menuData } from '@/pages/api';
 
 import { AiOutlineMenuFold } from "react-icons/ai";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
+import { TbHomeMove } from "react-icons/tb";
 import styles from './Menu.module.scss';
 
 export const Menu: React.FC = () => {
+  const hist = useRouter();
   const [menu, setMenu] = useState<string>(`${styles.menu}`);
+
+  const showBtnGoHome: boolean = hist.asPath !== '/';
 
   const openMenu = () => {
     const classNames = `${styles.menu} ${styles.active}`;
@@ -35,6 +40,14 @@ export const Menu: React.FC = () => {
             size={40}
             onClick={closeMenu}
           />
+          {showBtnGoHome && (
+            <Link className={styles.goHomeLink} href='/'>
+              <TbHomeMove
+                className={styles.goHome}
+                size={36}
+              />
+            </Link>
+          )}
           <nav>
             <ul className={styles.list}>
               {menuData.map((data, i) => (

@@ -42,6 +42,18 @@
   cursor: pointer;
 }
 
+.goHomeLink {
+  color: #000;
+}
+
+.goHome {
+  position: absolute;
+  top: 14px;
+  right: 246px;
+  transform: scale(-1, 1);
+  cursor: pointer;
+}
+
 .list {
   list-style-type: none;
   padding-left: 40px;
