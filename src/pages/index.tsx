@@ -1,15 +1,12 @@
 import Link from 'next/link'
+import { Menu } from '@/components/Menu';
 import { SocialNetworkSidebar } from '@/components/SocialNetworkSidebar';
 import styles from '@/styles/Home.module.scss'
 
 export default function Home() {
   return (
     <div className={styles.promo}>
-      <div className={styles.hamburger}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <Menu />
       <div className={styles.container}>
         <div className={styles.subTitle}>
           My name is Oleksandr Khozhainov
