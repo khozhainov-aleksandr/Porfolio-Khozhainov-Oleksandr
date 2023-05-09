@@ -27,6 +27,10 @@
   line-height: var(--title_fz16-height);
   z-index: 1;
   @include before_circle;
+  &::before {
+    top: -18%;
+    left: -8px;
+  }
 }
 
 .btnWrapper {
@@ -52,21 +56,20 @@
   box-shadow: none;
 }
 
-// ! Display width - 1200px
+// ! Start @media
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
   }
 }
 
-// ! Display width - 992px
 @media (max-width: 992px) {
   .container {
     max-width: 720px;
   }
 }
 
-// ! Display width - 768px
 @media (max-width: 768px) {
   .container {
     max-width: 540px;
@@ -79,7 +82,6 @@
   }
 }
 
-// ! Display width - 576px
 @media (max-width: 576px) {
   .container {
     width: 100%;
