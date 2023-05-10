@@ -1,21 +1,21 @@
 :root {
-  --main-color: #ffa501;
-  --black-color: #000;
+  --main-color: #ffa501; // color: var(--main-color);
+  --black-color: #000; // color: var(--black-color);
 
   // Title
-  --title-size: 36px;
-  --title-weight: 700;
-  --title-height: 60px;
+  --title-size: 36px; // font-size: var(--title-size);
+  --title-weight: 700; // font-weight: var(--title-weight);
+  --title-height: 60px; // line-height: var(--title-height);
 
-  --title_fz14-size: 14px;
-  --title_fz14-height: 21px;
+  --title_fz14-size: 14px; // font-size: var(--title_fz14-size);
+  --title_fz14-height: 21px; // line-height: var(--title_fz14-height);
+  
+  --title_fz16-size: 16px; // font-size: var(--title_fz16-size);
+  --title_fz16-height: 24px; // line-height: var(--title_fz16-height);
 
-  --title_fz16-size: 16px;
-  --title_fz16-height: 24px;
+  --title_fz36-size: 36px; // font-size: var(--title_fz36-size);
 
-  --title_fz36-size: 36px;
-
-  --title_fz50-size: 50px;
-  --title_fz50-weight: 900;
-  --title_fz50-height: 50px;
+  --title_fz50-size: 50px; // font-size: var(--title_fz50-size);
+  --title_fz50-weight: 900; // font-weight: var(--title_fz50-weight);
+  --title_fz50-height: 50px; // line-height: var(--title_fz50-height);
 }
