@@ -2,7 +2,7 @@
   &:before {
     content: '';
     position: absolute;
-    top: -25%;
+    top: -24%;
     left: -10px;
     width: 36px;
     height: 36px;
@@ -10,6 +10,13 @@
     background: var(--main-color);
     z-index: -1;
   }
+}
+
+@mixin divider {
+  width: 60px;
+  height: 3px;
+  background-color: var(--main-color);
+  margin: 25px auto 0px auto;
 }
 
 @mixin hover_effect {
