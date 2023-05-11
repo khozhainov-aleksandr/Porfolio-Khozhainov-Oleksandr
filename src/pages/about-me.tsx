@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { aboutSkillsData, myResume } from './api';
 import { Menu } from '@/components/Menu';
 import { SocialNetworkSidebar } from '@/components/SocialNetworkSidebar';
+import { Container } from '@/components/Container';
 
 import MyPhotoImg from '@/img/my_photo/my_photo_header.jpg';
 import { MdLocationPin } from "react-icons/md";
@@ -14,8 +15,7 @@ export default function AboutMe() {
     <div className={styles.about}>
       <Menu />
       <SocialNetworkSidebar />
-
-      <div className={styles.container}>
+      <Container>
         <div className={styles.mainWrapper}>
           <div className={styles.myPhoto}>
             <Image
@@ -89,7 +89,7 @@ export default function AboutMe() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </div>
   )
 }
