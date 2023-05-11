@@ -1,10 +1,5 @@
 @import './addition/mixin';
 
-.container {
-  width: 1140px;
-  margin: 0 auto;
-}
-
 .promo {
   position: relative;
   padding-top: 205px;
@@ -51,30 +46,14 @@
   margin-left: 15px;
   padding: 12px 25px;
   color: var(--black-color);
-  font-weight: vat(--title-weight);
+  font-weight: var(--title-weight);
   transition: none;
   box-shadow: none;
 }
 
 // ! Start @media
 
-@media (max-width: 1200px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (max-width: 992px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
 @media (max-width: 768px) {
-  .container {
-    max-width: 540px;
-  }
-
   .title {
     margin-top: 24px;
     width: 300px;
@@ -83,11 +62,6 @@
 }
 
 @media (max-width: 576px) {
-  .container {
-    width: 100%;
-    padding: 0 10px;
-  }
-
   .promo {
     background: url('../img/background/main_background.jpg') no-repeat 57% / cover;
   }
