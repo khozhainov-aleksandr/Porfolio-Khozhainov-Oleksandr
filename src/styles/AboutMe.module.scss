@@ -138,3 +138,89 @@
   @include buttonColored;
   @include hover_effect;
 }
+
+// ! Start @media
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .mainWrapper {
+    grid-template-columns: 400px 520px;
+    column-gap: 40px;
+  }
+
+  .skillsWrapper {
+    column-gap: 20px;
+    grid-template:
+      repeat(2, minmax(115px, auto))
+      / repeat(2, 250px);
+  }
+
+  .skillsItem {
+    grid-template-columns: 40px 195px;
+    column-gap: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .mainWrapper {
+    grid-template-columns: 300px 380px;
+  }
+
+  .skillsWrapper {
+    grid-template-columns: 380px;
+    grid-auto-rows: minmax(115px, auto);
+  }
+
+  .skillsItem {
+    grid-template-columns: 40px 320px;
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .about {
+    padding-top: 40px;
+  }
+
+  .mainWrapper {
+    grid-template: 400px auto auto / 1fr;
+  }
+
+  .myPhoto {
+    grid-row: unset;
+  }
+
+  .skillsWrapper {
+    grid-template-columns: repeat(2, 260px);
+  }
+
+  .skillsItem {
+    grid-template-columns: 40px 200px;
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .mainWrapper {
+    grid-template: 340px auto auto / 1fr;
+  }
+
+  .skillsWrapper {
+    grid-template-columns: 1fr;
+  }
+}
