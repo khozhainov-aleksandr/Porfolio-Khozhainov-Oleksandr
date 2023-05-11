@@ -1,12 +1,7 @@
 @import './addition/mixin';
 
-.container {
-  width: 1140px;
-  margin: 0 auto;
-}
-
 .about {
-  padding-top: 120px;
+  margin-top: 120px;
 }
 
 .mainWrapper {
@@ -21,6 +16,7 @@
 }
 
 .myPhoto {
+  position: relative;
   grid-row: 1/3;
 
   img {
@@ -142,10 +138,6 @@
 // ! Start @media
 
 @media (max-width: 1200px) {
-  .container {
-    max-width: 960px;
-  }
-
   .mainWrapper {
     grid-template-columns: 400px 520px;
     column-gap: 40px;
@@ -165,12 +157,12 @@
 }
 
 @media (max-width: 992px) {
-  .container {
-    max-width: 720px;
-  }
-
   .mainWrapper {
     grid-template-columns: 300px 380px;
+  }
+
+  .myPhoto {
+    top: -62px;
   }
 
   .skillsWrapper {
@@ -185,12 +177,8 @@
 }
 
 @media (max-width: 768px) {
-  .container {
-    max-width: 540px;
-  }
-
   .about {
-    padding-top: 40px;
+    margin-top: 60px ;
   }
 
   .mainWrapper {
@@ -198,6 +186,7 @@
   }
 
   .myPhoto {
+    top: 10px;
     grid-row: unset;
   }
 
@@ -212,8 +201,8 @@
 }
 
 @media (max-width: 576px) {
-  .container {
-    max-width: 540px;
+  .about {
+    margin-bottom: 120px ;
   }
 
   .mainWrapper {
