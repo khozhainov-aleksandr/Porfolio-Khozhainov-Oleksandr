@@ -9,4 +9,5 @@ export {
   menuData,
   aboutSkillsData,
   socialNetworkData,
+  educationData,
 } from './api';
