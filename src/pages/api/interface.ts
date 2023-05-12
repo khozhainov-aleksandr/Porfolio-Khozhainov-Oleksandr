@@ -17,7 +17,7 @@ export interface SocialNetworkData {
 
 export interface EducationData {
   mainTitle: string;
-  item: {
+  items: {
     title: string;
     subTitle: string;
     description: string;

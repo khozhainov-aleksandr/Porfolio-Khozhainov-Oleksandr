@@ -94,7 +94,7 @@ export const socialNetworkData: SocialNetworkData[] = [
 export const educationData: EducationData[] = [
   {
     mainTitle: 'IT Education',
-    item: [
+    items: [
       {
         title: 'Mate Academy',
         subTitle: 'Full day education to Front-End Developer (2022)',
@@ -109,7 +109,7 @@ export const educationData: EducationData[] = [
   },
   {
     mainTitle: 'Other Education',
-    item: [
+    items: [
       {
         title: 'Odessa National Maritime Academy',
         subTitle: 'Navigator | Odessa (2011-2016)',
