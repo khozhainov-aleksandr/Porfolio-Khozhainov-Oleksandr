@@ -14,3 +14,12 @@ export interface SocialNetworkData {
   link: string;
   img: string;
 };
+
+export interface EducationData {
+  mainTitle: string;
+  item: {
+    title: string;
+    subTitle: string;
+    description: string;
+  }[];
+};
