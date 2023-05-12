@@ -2,6 +2,7 @@ import {
   SocialNetworkData,
   AboutSkillsData,
   MenuData,
+  EducationData,
 } from './interface';
 
 import linkedinImg from '@/icon/social/linkedin.svg';
@@ -87,5 +88,38 @@ export const socialNetworkData: SocialNetworkData[] = [
     title: 'GitHub',
     link: 'https://github.com/khozhainov-aleksandr',
     img: githubImg,
+  },
+];
+
+export const educationData: EducationData[] = [
+  {
+    mainTitle: 'IT Education',
+    item: [
+      {
+        title: 'Mate Academy',
+        subTitle: 'Full day education to Front-End Developer (2022)',
+        description: 'I studied at Mate Academy. The lessons lasted 4 months, 5 days a week from 9 to 18 + Conversation Club in English. A lot of practice in writing code during the study.',
+      },
+      {
+        title: 'Hillel School',
+        subTitle: 'Front-End Basic (2019) | Front-End Pro (2020)',
+        description: 'I finished at Hillel School, completed 2 courses "Front-End Basic" and "Front-End Pro". Studied such technologies HTML, CSS, SCSS, Bootstrap, JavaScript, LocalStorage, Fetch requests and worked with API, Gulp, and jQuery library.',
+      },
+    ]
+  },
+  {
+    mainTitle: 'Other Education',
+    item: [
+      {
+        title: 'Odessa National Maritime Academy',
+        subTitle: 'Navigator | Odessa (2011-2016)',
+        description: 'I finished studying at the Odessa National Maritime Academy in Odessa with the diploma of Specialist. The period of study at the Academy was 5 years.',
+      },
+      {
+        title: 'ONA of Nutrition Technologies',
+        subTitle: 'Restaurant business administrator | Odessa (2006-2010)',
+        description: 'I finished studying at the Odessa National Academy of Nutrition Technologies in Odessa with the diploma of Bachelor. The period of study at the Academy was 4 years.',
+      },
+    ]
   },
 ];
