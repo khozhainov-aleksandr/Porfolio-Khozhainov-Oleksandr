@@ -120,3 +120,40 @@
   font-size: 12px;
   line-height: 18px;
 }
+
+@media screen and (max-width:1200px) {
+	.educationWrapper {
+    padding: 40px 20px 0 20px;
+    column-gap: 80px;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .educationWrapper {
+    column-gap: 60px;
+    grid-template-columns: repeat(2, 320px);
+  }
+}
+
+@media screen and (max-width:768px) {
+	.education {
+    padding-top: 40px;
+  }
+
+  .educationWrapper {
+    grid-template-columns: 1fr;
+    column-gap: 60px;
+    row-gap: 40px;
+  }
+}
+
+@media screen and (max-width:576px) {
+	.education {
+		padding-top: 100px;
+	}
+
+  .educationWrapper {
+    padding: 40px 5px 0 5px;
+  }
+}
+
