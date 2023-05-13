@@ -9,6 +9,10 @@ import linkedinImg from '@/icon/social/linkedin.svg';
 import instagramImg from '@/icon/social/instagram.svg';
 import githubImg from '@/icon/social/github.svg';
 
+import { MdAnchor } from "react-icons/md";
+import { GrCertificate } from "react-icons/gr";
+import { IoSchoolOutline, IoFastFoodOutline } from "react-icons/io5";
+
 // ! --- --- --- ---
 
 export const myPhone: string = '+380681242477';
@@ -99,11 +103,13 @@ export const educationData: EducationData[] = [
         title: 'Mate Academy',
         subTitle: 'Full day education to Front-End Developer (2022)',
         description: 'I studied at Mate Academy. The lessons lasted 4 months, 5 days a week from 9 to 18 + Conversation Club in English. A lot of practice in writing code during the study.',
+        icon: <IoSchoolOutline size={30} />,
       },
       {
         title: 'Hillel School',
         subTitle: 'Front-End Basic (2019) | Front-End Pro (2020)',
         description: 'I finished at Hillel School, completed 2 courses "Front-End Basic" and "Front-End Pro". Studied such technologies HTML, CSS, SCSS, Bootstrap, JavaScript, LocalStorage, Fetch requests and worked with API, Gulp, and jQuery library.',
+        icon: <GrCertificate size={30} />,
       },
     ]
   },
@@ -114,11 +120,13 @@ export const educationData: EducationData[] = [
         title: 'Odessa National Maritime Academy',
         subTitle: 'Navigator | Odessa (2011-2016)',
         description: 'I finished studying at the Odessa National Maritime Academy in Odessa with the diploma of Specialist. The period of study at the Academy was 5 years.',
+        icon: <MdAnchor size={30} />,
       },
       {
         title: 'ONA of Nutrition Technologies',
         subTitle: 'Restaurant business administrator | Odessa (2006-2010)',
         description: 'I finished studying at the Odessa National Academy of Nutrition Technologies in Odessa with the diploma of Bachelor. The period of study at the Academy was 4 years.',
+        icon: <IoFastFoodOutline size={30} />,
       },
     ]
   },
