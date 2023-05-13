@@ -20,6 +20,7 @@ export interface EducationData {
   items: {
     title: string;
     subTitle: string;
+    icon: JSX.Element;
     description: string;
   }[];
 };
