@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { socialNetworkData } from '@/pages/api';
 import styles from './SocialNetworkSidebar.module.scss';
 
@@ -12,12 +11,7 @@ export const SocialNetworkSidebar: React.FC = () => (
         className={styles.link}
         target="_blank"
       >
-        <Image
-          height={22}
-          width={22}
-          src={data.img}
-          alt={data.title}
-        />
+        {data.icon}
       </Link>
     ))}
     <div className={styles.divider}></div>
