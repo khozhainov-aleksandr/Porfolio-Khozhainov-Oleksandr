@@ -15,6 +15,11 @@ export interface SocialNetworkData {
   img: string;
 };
 
+export interface TimerData {
+  timeValue: number;
+  time: string;
+};
+
 export interface EducationData {
   mainTitle: string;
   items: {
