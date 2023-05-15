@@ -61,13 +61,13 @@ export const Menu: React.FC = () => {
           </nav>
           <div className={styles.social}>
             {socialNetworkData.map((data, i) => (
-              <Link key={i} href={data.link} target="_blank">
-                <Image
-                  width={40}
-                  height={40}
-                  src={data.img}
-                  alt={data.title}
-                />
+              <Link
+                className={styles.socialLink}
+                key={i}
+                href={data.link}
+                target="_blank"
+              >
+                {data.icon}
               </Link>
             ))}
           </div>
