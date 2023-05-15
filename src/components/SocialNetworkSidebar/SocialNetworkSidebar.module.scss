@@ -11,11 +11,18 @@
 }
 
 .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 26px;
+  width: 26px;
   color: var(--black-color);
+  background-color: var(--main-color);
+  border-radius: 100%;
 
   & svg {
-    height: 22px;
-    width: 22px;
+    height: 20px;
+    width: 20px;
     transform: rotate(-90deg);
     transition: 0.3s ease-in;
   
