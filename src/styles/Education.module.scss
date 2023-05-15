@@ -159,6 +159,8 @@
   line-height: 18px;
 }
 
+// ! Start @media
+
 @media screen and (max-width:1200px) {
 	.educationWrapper {
     padding: 40px 20px 0 20px;
@@ -170,6 +172,18 @@
   .educationWrapper {
     column-gap: 60px;
     grid-template-columns: repeat(2, 320px);
+  }
+
+  .timerBlock {
+    &:nth-child(4) {
+      display: none;
+    }
+    &:nth-child(5) {
+      display: none;
+    }
+    &:nth-child(6) {
+      display: none;
+    }
   }
 }
 
@@ -193,5 +207,23 @@
   .educationWrapper {
     padding: 40px 5px 0 5px;
   }
+
+  .timer {
+    width: 80%;
+  }
+
+  .timerBlock {
+    width: 90px;
+    height: 114px;
+
+    span {
+      font-size: 45px;
+    }
+  }
 }
 
+@media (max-width: 425px) {
+  .timer {
+    width: 95%;
+  }
+}
