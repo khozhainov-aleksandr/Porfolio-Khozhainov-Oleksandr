@@ -1,19 +1,14 @@
 @import './addition/mixin';
 
 .education {
-  padding-top: 120px;
+  margin: 80px 0;
 }
 
 .mainTitle {
-  font-size: var(--title_fz16-size);
-  font-weight: var(--title-weight);
-  line-height: var(--title_fz16-height);
-}
-
-.subTitle {
   font-size: var(--title_fz36-size);
   font-weight: var(--title-weight);
   line-height: var(--title-height);
+  text-align: center;
 }
 
 .divider {
@@ -128,18 +123,22 @@
   position: absolute;
   top: 50px;
   left: 45px;
+  // position: absolute;
+  //   left: 17px;
+  //   top: 14px;
+  // height: 30px;
+  // width: 30px;
   @include before_circle;
 
   &:before {
+    top: 0%;
     left: -3px;
   }
 
-  img {
+  svg {
     position: absolute;
-    left: 17px;
-    top: 14px;
-    height: 30px;
-    width: 30px;
+    top: 6px;
+    left: 2px;
   }
 }
 
