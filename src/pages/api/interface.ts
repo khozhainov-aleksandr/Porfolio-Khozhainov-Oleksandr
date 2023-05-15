@@ -12,7 +12,7 @@ export interface AboutSkillsData {
 export interface SocialNetworkData {
   title: string;
   link: string;
-  img: string;
+  icon: JSX.Element;
 };
 
 export interface TimerData {

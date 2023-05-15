@@ -6,9 +6,11 @@ import {
   EducationData,
 } from './interface';
 
-import linkedinImg from '@/icon/social/linkedin.svg';
-import instagramImg from '@/icon/social/instagram.svg';
-import githubImg from '@/icon/social/github.svg';
+import {
+  FaLinkedin,
+  FaInstagramSquare,
+  FaGithubSquare,
+} from "react-icons/fa";
 
 import { MdAnchor } from "react-icons/md";
 import { GiDiploma } from "react-icons/gi";
@@ -82,17 +84,17 @@ export const socialNetworkData: SocialNetworkData[] = [
   {
     title: 'LinkedIn',
     link: 'https://www.linkedin.com/in/oleksandr-khozhainov',
-    img: linkedinImg,
+    icon: <FaLinkedin size={40} />,
   },
   {
     title: 'Instagram',
     link: 'https://www.instagram.com/alex_kh28',
-    img: instagramImg,
+    icon: <FaInstagramSquare size={40} />,
   },
   {
     title: 'GitHub',
     link: 'https://github.com/khozhainov-aleksandr',
-    img: githubImg,
+    icon: <FaGithubSquare size={40} />,
   },
 ];
 
