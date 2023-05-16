@@ -98,15 +98,6 @@ export const socialNetworkData: SocialNetworkData[] = [
   },
 ];
 
-export const timerData: TimerData[] = [
-  { timeValue: 18, time: 'years' },
-  { timeValue: 11, time: 'months' },
-  { timeValue: 12, time: 'days' },
-  { timeValue: 20, time: 'hours' },
-  { timeValue: 52, time: 'minutes' },
-  { timeValue: 28, time: 'seconds' },
-]
-
 export const educationData: EducationData[] = [
   {
     mainTitle: 'IT Education',
