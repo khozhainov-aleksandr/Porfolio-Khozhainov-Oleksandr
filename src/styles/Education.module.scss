@@ -188,10 +188,6 @@
 }
 
 @media screen and (max-width:768px) {
-	.education {
-    padding-top: 40px;
-  }
-
   .educationWrapper {
     grid-template-columns: 1fr;
     column-gap: 60px;
@@ -200,10 +196,6 @@
 }
 
 @media screen and (max-width:576px) {
-	.education {
-		padding-top: 100px;
-	}
-
   .educationWrapper {
     padding: 40px 5px 0 5px;
   }
