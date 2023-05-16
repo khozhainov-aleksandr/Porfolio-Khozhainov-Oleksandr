@@ -17,7 +17,7 @@ export interface SocialNetworkData {
 
 export interface TimerData {
   timeValue: number;
-  time: string;
+  timeName: string;
 };
 
 export interface EducationData {
