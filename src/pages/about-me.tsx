@@ -4,6 +4,7 @@ import { aboutSkillsData, myResume } from './api';
 import { Menu } from '@/components/Menu';
 import { SocialNetworkSidebar } from '@/components/SocialNetworkSidebar';
 import { Container } from '@/components/Container';
+import { Divider } from '@/components/Divider';
 
 import MyPhotoImg from '@/img/my_photo/my_photo_header.jpg';
 import { MdLocationPin } from "react-icons/md";
@@ -31,7 +32,7 @@ export default function AboutMe() {
             <div className={styles.descSubTitle}>
               My name is Oleksandr
             </div>
-            <div className={styles.divider} />
+            <Divider />
             <div className={styles.descText}>
               I changed my previous job to IT profession because I want to do my favorite thing! <br />
               I always study new and actual technologies and grow in profession, I like to work in team on interesting projects. <br />
