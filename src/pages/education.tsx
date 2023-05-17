@@ -4,6 +4,7 @@ import { educationData } from './api';
 import { Menu } from '@/components/Menu';
 import { SocialNetworkSidebar } from '@/components/SocialNetworkSidebar';
 import { Container } from '@/components/Container';
+import { Divider } from '@/components/Divider';
 import styles from '@/styles/Education.module.scss'
 
 export default function Education() {
@@ -49,7 +50,7 @@ export default function Education() {
           <h1 className={styles.mainTitle}>
             My Education
           </h1>
-          <div className={styles.divider} />
+          <Divider />
 
           <div className={styles.timer}>
             <div className={styles.timerTitle}>
