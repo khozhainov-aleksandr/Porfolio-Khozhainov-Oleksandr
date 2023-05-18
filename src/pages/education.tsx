@@ -50,7 +50,7 @@ export default function Education() {
           <h1 className={styles.mainTitle}>
             My Education
           </h1>
-          <Divider />
+          <Divider position='center' />
 
           <div className={styles.timer}>
             <div className={styles.timerTitle}>
