@@ -47,6 +47,7 @@
   font-size: var(--title_fz36-size);
   font-weight: var(--title-weight);
   line-height: var(--title-height);
+  white-space: nowrap;
 }
 
 .descText {
@@ -203,5 +204,17 @@
 
   .skillsWrapper {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 414px) {
+  .descSubTitle {
+    font-size: var(--title_fz30-size);
+  }
+}
+
+@media (max-width: 340px) {
+  .descSubTitle {
+    font-size: var(--title_fz28-size);
   }
 }
