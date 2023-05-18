@@ -1,4 +1,11 @@
-.divider {
+.dividerStart {
+  width: 60px;
+  height: 3px;
+  background-color: var(--main-color);
+  margin: 0;
+}
+
+.dividerCenter {
   width: 60px;
   height: 3px;
   background-color: var(--main-color);
