@@ -32,7 +32,7 @@ export default function AboutMe() {
             <div className={styles.descSubTitle}>
               My name is Oleksandr
             </div>
-            <Divider />
+            <Divider position='start' />
             <div className={styles.descText}>
               I changed my previous job to IT profession because I want to do my favorite thing! <br />
               I always study new and actual technologies and grow in profession, I like to work in team on interesting projects. <br />
