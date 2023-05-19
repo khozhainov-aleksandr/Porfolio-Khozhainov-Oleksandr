@@ -10,4 +10,5 @@ export {
   aboutSkillsData,
   socialNetworkData,
   educationData,
+  imagesData,
 } from './api';
