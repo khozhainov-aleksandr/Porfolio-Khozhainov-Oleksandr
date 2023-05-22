@@ -2,8 +2,8 @@ import {
   SocialNetworkData,
   AboutSkillsData,
   MenuData,
-  TimerData,
   EducationData,
+  ImagesData,
 } from './interface';
 
 import {
@@ -15,6 +15,15 @@ import {
 import { MdAnchor } from "react-icons/md";
 import { GiDiploma } from "react-icons/gi";
 import { IoSchoolOutline, IoFastFoodOutline } from "react-icons/io5";
+
+import imgHillelBasic from '../../img/certificates/Hillel__Front-End_Basic-min.jpg';
+import imgHillelPro from '../../img/certificates/Hillel__Front-End_Pro-min.jpg';
+import imgUdemyBasicsHtml from '../../img/certificates/Udemy__Basics-of-HTML-Course-min.jpg';
+import imgUdemyGit from '../../img/certificates/Udemy__Git_The-Complete-Course-for-Beginners-and-Beyond-min.jpg';
+import imgUdemyJSIntense from '../../img/certificates/Udemy__Intense-immersion-in-JavaScript-min.jpg';
+import imgUdemyWebDev from '../../img/certificates/Udemy__WEB-Developer-2020-min.jpg';
+import imgSololearnHtml from '../../img/certificates/SOLOLEARN__HTML-min.jpg';
+import imgSololearnCss from '../../img/certificates/SOLOLEARN__CSS-min.jpg';
 
 // ! --- --- --- ---
 
@@ -132,5 +141,40 @@ export const educationData: EducationData[] = [
         icon: <IoFastFoodOutline size={26} />,
       },
     ]
+  },
+];
+
+export const imagesData: ImagesData[] = [
+  {
+    image: imgHillelBasic.src,
+    alt: 'Certificate Hillel Basic'
+  },
+  {
+    image: imgHillelPro.src,
+    alt: 'Certificate Hillel Pro'
+  },
+  {
+    image: imgUdemyBasicsHtml.src,
+    alt: 'Certificate Udemy Basics HTML'
+  },
+  {
+    image: imgUdemyGit.src,
+    alt: 'Certificate Udemy Git'
+  },
+  {
+    image: imgUdemyJSIntense.src,
+    alt: 'Certificate Udemy JS Intense'
+  },
+  {
+    image: imgUdemyWebDev.src,
+    alt: 'Certificate Web Developer'
+  },
+  {
+    image: imgSololearnHtml.src,
+    alt: 'Certificate Sololearn HTML'
+  },
+  {
+    image: imgSololearnCss.src,
+    alt: 'Certificate Sololearn CSS'
   },
 ];
