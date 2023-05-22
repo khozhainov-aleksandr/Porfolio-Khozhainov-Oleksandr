@@ -29,3 +29,8 @@ export interface EducationData {
     description: string;
   }[];
 };
+
+export interface ImagesData {
+  image: string;
+  alt: string;
+};
