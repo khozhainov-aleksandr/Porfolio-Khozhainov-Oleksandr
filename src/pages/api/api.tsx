@@ -24,6 +24,7 @@ import imgUdemyJSIntense from '../../img/certificates/Udemy__Intense-immersion-i
 import imgUdemyWebDev from '../../img/certificates/Udemy__WEB-Developer-2020-min.jpg';
 import imgSololearnHtml from '../../img/certificates/SOLOLEARN__HTML-min.jpg';
 import imgSololearnCss from '../../img/certificates/SOLOLEARN__CSS-min.jpg';
+import imgGeekBrainsProgramming from '../../img/certificates/GeekBrains__Programming-basics_Beginner-min.jpg';
 
 // ! --- --- --- ---
 
@@ -176,5 +177,9 @@ export const imagesData: ImagesData[] = [
   {
     image: imgSololearnCss.src,
     alt: 'Certificate Sololearn CSS'
+  },
+  {
+    image: imgGeekBrainsProgramming.src,
+    alt: 'Certificate GeekBrains Programming'
   },
 ];
