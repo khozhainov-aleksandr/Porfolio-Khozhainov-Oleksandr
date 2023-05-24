@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Masonry, {ResponsiveMasonry} from 'react-responsive-masonry';
-import { imagesData } from './api';
 
+import { ImagesData } from './api/interface';
+import { imagesData, certificateButtonData } from './api';
 import { Menu } from '@/components/Menu';
 import { SocialNetworkSidebar } from '@/components/SocialNetworkSidebar';
 import { Container } from '@/components/Container';
@@ -10,6 +12,11 @@ import { Container } from '@/components/Container';
 import styles from '@/styles/Certificates.module.scss'
 
 export default function Certificates() {
+  const [showCertificate, setShowCertificate] = useState<ImagesData[]>(imagesData);
+
+  const getFilterCertificate = (value: string) => (
+    imagesData.filter((img) => img.title === value)
+  );
 
   return (
     <div className={styles.certificates}>
@@ -18,11 +25,19 @@ export default function Certificates() {
         <>
           <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 900: 5, }}>
             <Masonry gutter='20px' className={styles.btnWrapper}>
-              <button className={styles.btn}>Show All</button>
-              <button className={styles.btn}>Hillel</button>
-              <button className={styles.btn}>Udemy</button>
-              <button className={styles.btn}>Sololearn</button>
-              <button className={styles.btn}>GeekBrains</button>
+              {certificateButtonData.map((button, i) => (
+                <button
+                  key={i}
+                  className={styles.btn}
+                  onClick={() => 
+                    typeof button.arg !== 'string'
+                    ? setShowCertificate(button.arg)
+                    : setShowCertificate(getFilterCertificate(button.arg))
+                  }
+                >
+                  {button.title}
+                </button>
+              ))}
             </Masonry>
           </ResponsiveMasonry>
           <ResponsiveMasonry
@@ -30,7 +45,7 @@ export default function Certificates() {
             className={styles.galereWrapper}
           >
             <Masonry gutter='20px'>
-              {imagesData.map((data, i) => (
+              {showCertificate.map((data, i) => (
                 <Link
                   key={i}
                   className={styles.link}
