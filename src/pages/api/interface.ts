@@ -31,6 +31,8 @@ export interface EducationData {
 };
 
 export interface ImagesData {
+  title: string;
   image: string;
   alt: string;
+  link: string;
 };
