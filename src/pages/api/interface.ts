@@ -36,3 +36,8 @@ export interface ImagesData {
   alt: string;
   link: string;
 };
+
+export interface CertificateButtonData {
+  title: string;
+  arg: string | ImagesData;
+};

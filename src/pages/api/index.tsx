@@ -11,4 +11,5 @@ export {
   socialNetworkData,
   educationData,
   imagesData,
+  certificateButtonData,
 } from './api';

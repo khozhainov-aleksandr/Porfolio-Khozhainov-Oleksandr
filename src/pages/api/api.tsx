@@ -201,3 +201,11 @@ export const imagesData: ImagesData[] = [
     link: 'https://tinyurl.com/ydgpwq35'
   },
 ];
+
+export const certificateButtonData = [
+  {title: 'Show All', arg: imagesData},
+  {title: 'Hillel', arg: 'Hillel'},
+  {title: 'Udemy', arg: 'Udemy'},
+  {title: 'Sololearn', arg: 'Sololearn'},
+  {title: 'GeekBrains', arg: 'GeekBrains'},
+];
