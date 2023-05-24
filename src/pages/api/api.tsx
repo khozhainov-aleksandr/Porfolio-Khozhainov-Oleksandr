@@ -147,39 +147,57 @@ export const educationData: EducationData[] = [
 
 export const imagesData: ImagesData[] = [
   {
+    title: 'Hillel',
     image: imgHillelBasic.src,
-    alt: 'Certificate Hillel Basic'
+    alt: 'Certificate Hillel Basic',
+    link: 'https://tinyurl.com/y75w9wr8'
   },
   {
+    title: 'Hillel',
     image: imgHillelPro.src,
-    alt: 'Certificate Hillel Pro'
+    alt: 'Certificate Hillel Pro',
+    link: 'https://tinyurl.com/y9gk2zpu'
   },
   {
+    title: 'Udemy',
     image: imgUdemyBasicsHtml.src,
-    alt: 'Certificate Udemy Basics HTML'
+    alt: 'Certificate Udemy Basics HTML',
+    link: 'https://tinyurl.com/yb6thkar'
   },
   {
+    title: 'Udemy',
     image: imgUdemyGit.src,
-    alt: 'Certificate Udemy Git'
+    alt: 'Certificate Udemy Git',
+    link: 'https://tinyurl.com/ycvtqbte'
   },
   {
+    title: 'Udemy',
     image: imgUdemyJSIntense.src,
-    alt: 'Certificate Udemy JS Intense'
+    alt: 'Certificate Udemy JS Intense',
+    link: 'https://tinyurl.com/y9jcqqza'
   },
   {
+    title: 'Udemy',
     image: imgUdemyWebDev.src,
-    alt: 'Certificate Web Developer'
+    alt: 'Certificate Web Developer',
+    link: 'https://tinyurl.com/ybx6nc4x'
   },
   {
+    title: 'Sololearn',
     image: imgSololearnHtml.src,
-    alt: 'Certificate Sololearn HTML'
+    alt: 'Certificate Sololearn HTML',
+    link: 'https://tinyurl.com/ybhgm5mr'
   },
   {
+    title: 'Sololearn',
     image: imgSololearnCss.src,
-    alt: 'Certificate Sololearn CSS'
+    alt: 'Certificate Sololearn CSS',
+    link: 'https://tinyurl.com/y9mmznpy'
   },
   {
+    title: 'GeekBrains',
     image: imgGeekBrainsProgramming.src,
-    alt: 'Certificate GeekBrains Programming'
+    alt: 'Certificate GeekBrains Programming',
+    link: 'https://tinyurl.com/ydgpwq35'
   },
 ];
