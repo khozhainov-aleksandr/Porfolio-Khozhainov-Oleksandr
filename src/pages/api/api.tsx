@@ -28,15 +28,15 @@ import imgGeekBrainsProgramming from '../../img/certificates/GeekBrains__Program
 
 // ! --- --- --- ---
 
-export const myPhone: string = '+380681242477';
+export const myPhone: string = '+31617200901';
 export const myEmail: string = 'khozhainov.aleksandr@gmail.com';
 export const myResume: string = 'https://drive.google.com/file/d/14WhBfjpDdpD4AntjGS4aOV03Hxxe_Xi7/view?usp=sharing';
 
-export const currentCity: string = 'Odessa';
-export const currentCityLink: string = 'https://goo.gl/maps/1qqPeDaRuhZgq6nR9';
+export const currentCity: string = 'Overloon';
+export const currentCityLink: string = 'https://goo.gl/maps/Vr5FiSH98SusUKct5';
 
-export const currentCountry: string = 'Ukraine';
-export const currentCountryLink: string = 'https://goo.gl/maps/Z9SQy9vE2W7zMP7j6';
+export const currentCountry: string = 'Netherlands';
+export const currentCountryLink: string = 'https://goo.gl/maps/qD7YN28kcfJLaDqi8';
 
 // ! --- --- --- --- ---
 
