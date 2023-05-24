@@ -7,6 +7,7 @@
 - React
 - TypeScript
 - React-Icons
+- React Responsive Masonry
 - CSS Modules
 - SCSS style
 - ESLint
