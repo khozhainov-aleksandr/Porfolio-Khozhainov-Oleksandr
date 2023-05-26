@@ -12,4 +12,5 @@ export {
   educationData,
   imagesData,
   certificateButtonData,
+  skillsCardsData,
 } from './api';
