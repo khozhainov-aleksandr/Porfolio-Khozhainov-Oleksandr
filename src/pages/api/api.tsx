@@ -4,6 +4,7 @@ import {
   MenuData,
   EducationData,
   ImagesData,
+  SkillsCardsData,
 } from './interface';
 
 import {
@@ -25,6 +26,28 @@ import imgUdemyWebDev from '../../img/certificates/Udemy__WEB-Developer-2020-min
 import imgSololearnHtml from '../../img/certificates/SOLOLEARN__HTML-min.jpg';
 import imgSololearnCss from '../../img/certificates/SOLOLEARN__CSS-min.jpg';
 import imgGeekBrainsProgramming from '../../img/certificates/GeekBrains__Programming-basics_Beginner-min.jpg';
+
+
+import HTML5Icon from '../../icon/skills/html5.svg';
+import CSS3Icon from '../../icon/skills/css3.svg';
+import JavaScriptIcon from '../../icon/skills/javascript.svg';
+import TypeScriptIcon from '../../icon/skills/typescript.svg';
+import ReactIcon from '../../icon/skills/react.svg';
+import ReduxIcon from '../../icon/skills/redux.svg';
+import NextJsIcon from '../../icon/skills/next.svg';
+import VercelIcon from '../../icon/skills/vercel.svg';
+import CSSModulesIcon from '../../icon/skills/css_modules.svg';
+import SASSIcon from '../../icon/skills/sass.svg';
+import BootstrapIcon from '../../icon/skills/bootstrap.svg';
+import jQueryIcon from '../../icon/skills/jquery.svg';
+import ESlintIcon from '../../icon/skills/eslint.svg';
+import WebpackIcon from '../../icon/skills/webpack.svg';
+import GulpIcon from '../../icon/skills/gulp.svg';
+import GITIcon from '../../icon/skills/git.svg';
+import BEMIcon from '../../icon/skills/bem.svg';
+import ResponsiveDesignIcon from '../../icon/skills/responsive.svg';
+import SVGIcon from '../../icon/skills/svg.svg';
+import PhotoshopIcon from '../../icon/skills/photoshop.svg';
 
 // ! --- --- --- ---
 
@@ -208,4 +231,107 @@ export const certificateButtonData = [
   {title: 'Udemy', arg: 'Udemy'},
   {title: 'Sololearn', arg: 'Sololearn'},
   {title: 'GeekBrains', arg: 'GeekBrains'},
+];
+
+export const skillsCardsData: SkillsCardsData[] = [
+  {
+    title: 'HTML5',
+    description: 'Completed studies of HTML (HyperText Markup Language), learned how to do semantic page layout, HTML5 standard, apply Tags and Attributes on the site.',
+    img: HTML5Icon,
+  },
+  {
+    title: 'CSS3',
+    description: 'Completed studies of CSS (Cascading Style Sheets) Learned how to style elements on a web page using Tags, Selectors and Classes, work with Animations (@keyframes), work with pseudo-classes: before; : after; : nth-child (); and: hover effect.',
+    img: CSS3Icon,
+  },
+  {
+    title: 'Java Script',
+    description: 'I am learning JavaScript programming language for writing logic on a website working with DOM. It is a prototype-based, multi-paradigm scripting language that is dynamic, and supports object-oriented, imperative, and functional programming styles.',
+    img: JavaScriptIcon,
+  },
+  {
+    title: 'TypeScript',
+    description: 'TypeScript extends JavaScript by adding data types, classes, and other object-oriented features with type-checking. It is a typed superset of JavaScript that compiles to plain JavaScript. It is designed for the development of large applications.',
+    img: TypeScriptIcon,
+  },
+  {
+    title: 'React',
+    description: 'React can be used as a base in the development of single-page, mobile, or server-rendered applications. React applications usually requires the use of additional libraries for routing.',
+    img: ReactIcon,
+  },
+  {
+    title: 'Redux',
+    description: 'Redux solves this problem by managing application’s state with a single global object called Store. Redux fundamental principles help in maintaining consistency throughout your application, which makes debugging and testing easier.',
+    img: ReduxIcon,
+  },
+  {
+    title: 'Next.js',
+    description: 'Traditional React apps can only render their content in the client-side browser, Next.js extends this functionality to include applications rendered on the server-side.',
+    img: NextJsIcon,
+  },
+  {
+    title: 'Vercel',
+    description: 'Vercel enable frontend teams to develop, preview, and ship delightful user experiences, where performance is the default. It is possible to deploy such libraries as - Next.js, React App, SvelteKit, Nuxt.',
+    img: VercelIcon,
+  },
+  {
+    title: 'CSS Modules',
+    description: 'CSS Modules are very popular because they automatically make class and animation names unique so you don’t have to worry about selector name collisions.',
+    img: CSSModulesIcon,
+  },
+  {
+    title: 'SCSS / SASS',
+    description: 'I use SCSS and SASS preprocessor for convenient site styling, nesting of elements, variables and blocking for convenient site support.',
+    img: SASSIcon,
+  },
+  {
+    title: 'Bootstrap',
+    description: 'I studied the library Bootstrap, learned how to use the finished Bootstrap grid for faster adaptive layout on real projects.',
+    img: BootstrapIcon,
+  },
+  {
+    title: 'jQuery',
+    description: 'I use the jQuery library in practice to connect plug-ins and configure them (pop-ups, sliders, animations, modal windows and Parallax effect)',
+    img: jQueryIcon,
+  },
+  {
+    title: 'ESlint',
+    description: 'ESLint supports current standards of ECMAScript, and experimental syntax from drafts for future standards. Code using JSX or TypeScript can also be processed when a plugin or transpiler is used.',
+    img: ESlintIcon,
+  },
+  {
+    title: 'Webpack',
+    description: 'Webpack is highly extensible via rules which allow developers to write custom tasks that they want to perform when bundling files together.',
+    img: WebpackIcon,
+  },
+  {
+    title: 'Gulp',
+    description: 'I studied the configuration of the builders for more convenient and quick website development from converting SCSS to CSS, Minification JS file and Image Optimization. Creating a virtual server emulator.',
+    img: GulpIcon,
+  },
+  {
+    title: 'GIT',
+    description: 'Learned to work with a GIT system. Work with remote and local repositories, work with repository branches, do git commit, status, diff, log, reset, checkout, remote, push and pull, merge and rebase, branch and git cherry-pick.',
+    img: GITIcon,
+  },
+  {
+    title: 'BEM Methodology',
+    description: 'I studied the BEM naming (Block, Element, Modifier) and put it into practice for the convenience of creating and maintaining the site in the future.',
+    img: BEMIcon,
+  },
+  {
+    title: 'Responsive design',
+    description: 'I learned to work with @media screen and do adaptive layout for mobile devices. I also have experience in mobile first layout',
+    img: ResponsiveDesignIcon,
+  },
+  {
+    title: 'SVG',
+    description: 'I studied Vector Graphics, learned how to apply SVG to a website, adjust the size of SVG images and change color when: hover effect when necessary.',
+    img: SVGIcon,
+  },
+  {
+    title: 'Figma / Avocode / Photoshop',
+    description: 'I am able to work with these tools for typesetting web pages according to the .PSD and .FIG layout.',
+    img: PhotoshopIcon,
+  },
 ];
