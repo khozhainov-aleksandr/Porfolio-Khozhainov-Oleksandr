@@ -1,7 +1,7 @@
 import styles from './Container.module.scss';
 
 interface Props {
-  children: JSX.Element;
+  children: JSX.Element | JSX.Element[];
 }
 
 export const Container: React.FC<Props> = ({ children }) => (
