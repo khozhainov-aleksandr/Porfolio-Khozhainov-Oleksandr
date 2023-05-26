@@ -41,3 +41,9 @@ export interface CertificateButtonData {
   title: string;
   arg: string | ImagesData;
 };
+
+export interface SkillsCardsData {
+  title: string;
+  description: string;
+  img: string;
+};
