@@ -9,7 +9,7 @@ import { Divider } from '@/components/Divider';
 
 import styles from '@/styles/Portfolio.module.scss'
 
-export default function Skills() {
+export default function Portfolio() {
   return (
     <div className={styles.portfolio}>
       <Menu />
