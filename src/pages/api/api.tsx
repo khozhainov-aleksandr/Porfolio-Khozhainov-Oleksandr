@@ -5,6 +5,7 @@ import {
   EducationData,
   ImagesData,
   SkillsCardsData,
+  PortfolioData,
 } from './interface';
 
 import {
@@ -27,7 +28,6 @@ import imgSololearnHtml from '../../img/certificates/SOLOLEARN__HTML-min.jpg';
 import imgSololearnCss from '../../img/certificates/SOLOLEARN__CSS-min.jpg';
 import imgGeekBrainsProgramming from '../../img/certificates/GeekBrains__Programming-basics_Beginner-min.jpg';
 
-
 import HTML5Icon from '../../icon/skills/html5.svg';
 import CSS3Icon from '../../icon/skills/css3.svg';
 import JavaScriptIcon from '../../icon/skills/javascript.svg';
@@ -48,6 +48,15 @@ import BEMIcon from '../../icon/skills/bem.svg';
 import ResponsiveDesignIcon from '../../icon/skills/responsive.svg';
 import SVGIcon from '../../icon/skills/svg.svg';
 import PhotoshopIcon from '../../icon/skills/photoshop.svg';
+
+import RootzPicture from '../../img/works/Rootz.jpg';
+import EcoCosmeticsPicture from '../../img/works/Eco-Cosmetics.jpg';
+import MyBiKEPicture from '../../img/works/MyBiKE.jpg';
+import UberPicture from '../../img/works/Uber.jpg';
+import RunSmartPicture from '../../img/works/RunSmart.jpg';
+import FirstPortfolioPicture from '../../img/works/First-Portfolio.jpg';
+import ActiveBoxPicture from '../../img/works/ActiveBox.jpg';
+import NetclicksPicture from '../../img/works/Netclicks.jpg';
 
 // ! --- --- --- ---
 
@@ -333,5 +342,56 @@ export const skillsCardsData: SkillsCardsData[] = [
     title: 'Figma / Avocode / Photoshop',
     description: 'I am able to work with these tools for typesetting web pages according to the .PSD and .FIG layout.',
     img: PhotoshopIcon,
+  },
+];
+
+export const portfolioData: PortfolioData[] = [
+  {
+    className: 'Rootz',
+    link: 'https://my-project-rootz.vercel.app',
+    img: RootzPicture.src,
+    alt: 'Rootz Project picture',
+  },
+  {
+    className: 'EcoCosmetics',
+    link: 'https://khozhainov-aleksandr.github.io/My-project__Eco-Cosmetics/',
+    img: EcoCosmeticsPicture.src,
+    alt: 'Eco-Cosmetics Project picture',
+  },
+  {
+    className: 'MyBiKE',
+    link: 'https://khozhainov-aleksandr.github.io/My-project__MyBiKE/',
+    img: MyBiKEPicture.src,
+    alt: 'MyBiKE Project picture',
+  },
+  {
+    className: 'Uber',
+    link: 'https://khozhainov-aleksandr.github.io/My-project__Uber/',
+    img: UberPicture.src,
+    alt: 'Uber Project picture',
+  },
+  {
+    className: 'RunSmart',
+    link: 'https://khozhainov-aleksandr.github.io/My-project__RunSmart/',
+    img: RunSmartPicture.src,
+    alt: 'RunSmart Project picture',
+  },
+  {
+    className: 'FirstPortfolio',
+    link: 'https://khozhainov-aleksandr.github.io/My-project__First-Portfolio/',
+    img: FirstPortfolioPicture.src,
+    alt: 'First Portfolio Project picture',
+  },
+  {
+    className: 'ActiveBox',
+    link: 'https://khozhainov-aleksandr.github.io/My-project__ActiveBox/',
+    img: ActiveBoxPicture.src,
+    alt: 'ActiveBox Project picture',
+  },
+  {
+    className: 'Netclicks',
+    link: 'https://khozhainov-aleksandr.github.io/My-project__Netclicks/',
+    img: NetclicksPicture.src,
+    alt: 'Netclicks Project picture',
   },
 ];

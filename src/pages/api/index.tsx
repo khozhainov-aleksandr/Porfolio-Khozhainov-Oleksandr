@@ -13,4 +13,5 @@ export {
   imagesData,
   certificateButtonData,
   skillsCardsData,
+  portfolioData,
 } from './api';
