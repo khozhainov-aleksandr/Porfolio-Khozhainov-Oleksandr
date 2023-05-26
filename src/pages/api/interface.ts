@@ -47,3 +47,10 @@ export interface SkillsCardsData {
   description: string;
   img: string;
 };
+
+export interface PortfolioData {
+  className: string;
+  link: string;
+  img: string;
+  alt: string;
+};
