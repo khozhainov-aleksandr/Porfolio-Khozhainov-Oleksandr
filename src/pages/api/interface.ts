@@ -54,3 +54,9 @@ export interface PortfolioData {
   img: string;
   alt: string;
 };
+
+export interface ContactsData {
+  link: string;
+  img: string;
+  alt: string;
+};
