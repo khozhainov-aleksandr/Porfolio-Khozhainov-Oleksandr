@@ -6,6 +6,7 @@ import {
   ImagesData,
   SkillsCardsData,
   PortfolioData,
+  ContactsData,
 } from './interface';
 
 import {
@@ -18,45 +19,53 @@ import { MdAnchor } from "react-icons/md";
 import { GiDiploma } from "react-icons/gi";
 import { IoSchoolOutline, IoFastFoodOutline } from "react-icons/io5";
 
-import imgHillelBasic from '../../img/certificates/Hillel__Front-End_Basic-min.jpg';
-import imgHillelPro from '../../img/certificates/Hillel__Front-End_Pro-min.jpg';
-import imgUdemyBasicsHtml from '../../img/certificates/Udemy__Basics-of-HTML-Course-min.jpg';
-import imgUdemyGit from '../../img/certificates/Udemy__Git_The-Complete-Course-for-Beginners-and-Beyond-min.jpg';
-import imgUdemyJSIntense from '../../img/certificates/Udemy__Intense-immersion-in-JavaScript-min.jpg';
-import imgUdemyWebDev from '../../img/certificates/Udemy__WEB-Developer-2020-min.jpg';
-import imgSololearnHtml from '../../img/certificates/SOLOLEARN__HTML-min.jpg';
-import imgSololearnCss from '../../img/certificates/SOLOLEARN__CSS-min.jpg';
-import imgGeekBrainsProgramming from '../../img/certificates/GeekBrains__Programming-basics_Beginner-min.jpg';
+import imgHillelBasic from '@/img/certificates/Hillel__Front-End_Basic-min.jpg';
+import imgHillelPro from '@/img/certificates/Hillel__Front-End_Pro-min.jpg';
+import imgUdemyBasicsHtml from '@/img/certificates/Udemy__Basics-of-HTML-Course-min.jpg';
+import imgUdemyGit from '@/img/certificates/Udemy__Git_The-Complete-Course-for-Beginners-and-Beyond-min.jpg';
+import imgUdemyJSIntense from '@/img/certificates/Udemy__Intense-immersion-in-JavaScript-min.jpg';
+import imgUdemyWebDev from '@/img/certificates/Udemy__WEB-Developer-2020-min.jpg';
+import imgSololearnHtml from '@/img/certificates/SOLOLEARN__HTML-min.jpg';
+import imgSololearnCss from '@/img/certificates/SOLOLEARN__CSS-min.jpg';
+import imgGeekBrainsProgramming from '@/img/certificates/GeekBrains__Programming-basics_Beginner-min.jpg';
 
-import HTML5Icon from '../../icon/skills/html5.svg';
-import CSS3Icon from '../../icon/skills/css3.svg';
-import JavaScriptIcon from '../../icon/skills/javascript.svg';
-import TypeScriptIcon from '../../icon/skills/typescript.svg';
-import ReactIcon from '../../icon/skills/react.svg';
-import ReduxIcon from '../../icon/skills/redux.svg';
-import NextJsIcon from '../../icon/skills/next.svg';
-import VercelIcon from '../../icon/skills/vercel.svg';
-import CSSModulesIcon from '../../icon/skills/css_modules.svg';
-import SASSIcon from '../../icon/skills/sass.svg';
-import BootstrapIcon from '../../icon/skills/bootstrap.svg';
-import jQueryIcon from '../../icon/skills/jquery.svg';
-import ESlintIcon from '../../icon/skills/eslint.svg';
-import WebpackIcon from '../../icon/skills/webpack.svg';
-import GulpIcon from '../../icon/skills/gulp.svg';
-import GITIcon from '../../icon/skills/git.svg';
-import BEMIcon from '../../icon/skills/bem.svg';
-import ResponsiveDesignIcon from '../../icon/skills/responsive.svg';
-import SVGIcon from '../../icon/skills/svg.svg';
-import PhotoshopIcon from '../../icon/skills/photoshop.svg';
+import HTML5Icon from '@/icon/skills/html5.svg';
+import CSS3Icon from '@/icon/skills/css3.svg';
+import JavaScriptIcon from '@/icon/skills/javascript.svg';
+import TypeScriptIcon from '@/icon/skills/typescript.svg';
+import ReactIcon from '@/icon/skills/react.svg';
+import ReduxIcon from '@/icon/skills/redux.svg';
+import NextJsIcon from '@/icon/skills/next.svg';
+import VercelIcon from '@/icon/skills/vercel.svg';
+import CSSModulesIcon from '@/icon/skills/css_modules.svg';
+import SASSIcon from '@/icon/skills/sass.svg';
+import BootstrapIcon from '@/icon/skills/bootstrap.svg';
+import jQueryIcon from '@/icon/skills/jquery.svg';
+import ESlintIcon from '@/icon/skills/eslint.svg';
+import WebpackIcon from '@/icon/skills/webpack.svg';
+import GulpIcon from '@/icon/skills/gulp.svg';
+import GITIcon from '@/icon/skills/git.svg';
+import BEMIcon from '@/icon/skills/bem.svg';
+import ResponsiveDesignIcon from '@/icon/skills/responsive.svg';
+import SVGIcon from '@/icon/skills/svg.svg';
+import PhotoshopIcon from '@/icon/skills/photoshop.svg';
 
-import RootzPicture from '../../img/works/Rootz.jpg';
-import EcoCosmeticsPicture from '../../img/works/Eco-Cosmetics.jpg';
-import MyBiKEPicture from '../../img/works/MyBiKE.jpg';
-import UberPicture from '../../img/works/Uber.jpg';
-import RunSmartPicture from '../../img/works/RunSmart.jpg';
-import FirstPortfolioPicture from '../../img/works/First-Portfolio.jpg';
-import ActiveBoxPicture from '../../img/works/ActiveBox.jpg';
-import NetclicksPicture from '../../img/works/Netclicks.jpg';
+import RootzPicture from '@/img/works/Rootz.jpg';
+import EcoCosmeticsPicture from '@/img/works/Eco-Cosmetics.jpg';
+import MyBiKEPicture from '@/img/works/MyBiKE.jpg';
+import UberPicture from '@/img/works/Uber.jpg';
+import RunSmartPicture from '@/img/works/RunSmart.jpg';
+import FirstPortfolioPicture from '@/img/works/First-Portfolio.jpg';
+import ActiveBoxPicture from '@/img/works/ActiveBox.jpg';
+import NetclicksPicture from '@/img/works/Netclicks.jpg';
+
+import TelephoneIcon from '@/icon/social/phone.svg';
+import EmailIcon from '@/icon/social/email.svg';
+import TelegramIcon from '@/icon/social/telegram.svg';
+import LinkedinIcon from '@/icon/social/linkedin.svg';
+import FacebookIcon from '@/icon/social/facebook.svg';
+import InstagramIcon from '@/icon/social/instagram.svg';
+import GitHubIcon from '@/icon/social/github.svg';
 
 // ! --- --- --- ---
 
@@ -393,5 +402,43 @@ export const portfolioData: PortfolioData[] = [
     link: 'https://khozhainov-aleksandr.github.io/My-project__Netclicks/',
     img: NetclicksPicture.src,
     alt: 'Netclicks Project picture',
+  },
+];
+
+export const contactsData: ContactsData[] = [
+  {
+    link: `tel:${myPhone}`,
+    img: TelephoneIcon,
+    alt: 'Telephone',
+  },
+  {
+    link: `mailto:${myEmail}`,
+    img: EmailIcon,
+    alt: 'Email',
+  },
+  {
+    link: 'tg://resolve?domain=Aleksandr_Khozhainov',
+    img: TelegramIcon,
+    alt: 'Telegram',
+  },
+  {
+    link: 'https://www.linkedin.com/in/aleksandr-khozhainov-359172165',
+    img: LinkedinIcon,
+    alt: 'Linkedin',
+  },
+  {
+    link: 'https://www.facebook.com/Aleksandr.Khozhainov',
+    img: FacebookIcon,
+    alt: 'Facebook',
+  },
+  {
+    link: 'https://www.instagram.com/alex_kh28/',
+    img: InstagramIcon,
+    alt: 'Instagram',
+  },
+  {
+    link: 'https://github.com/khozhainov-aleksandr',
+    img: GitHubIcon,
+    alt: 'GitHub',
   },
 ];
