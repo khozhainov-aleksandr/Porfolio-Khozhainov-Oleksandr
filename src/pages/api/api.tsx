@@ -9,12 +9,6 @@ import {
   ContactsData,
 } from './interface';
 
-import {
-  FaLinkedin,
-  FaInstagramSquare,
-  FaGithubSquare,
-} from "react-icons/fa";
-
 import { MdAnchor } from "react-icons/md";
 import { GiDiploma } from "react-icons/gi";
 import { IoSchoolOutline, IoFastFoodOutline } from "react-icons/io5";
@@ -135,17 +129,20 @@ export const socialNetworkData: SocialNetworkData[] = [
   {
     title: 'LinkedIn',
     link: 'https://www.linkedin.com/in/oleksandr-khozhainov',
-    icon: <FaLinkedin size={40} />,
+    icon: LinkedinIcon.src,
+    alt: 'LinkedIn icon',
   },
   {
     title: 'Instagram',
     link: 'https://www.instagram.com/alex_kh28',
-    icon: <FaInstagramSquare size={40} />,
+    icon: InstagramIcon.src,
+    alt: 'Instagram icon',
   },
   {
     title: 'GitHub',
     link: 'https://github.com/khozhainov-aleksandr',
-    icon: <FaGithubSquare size={40} />,
+    icon: GitHubIcon.src,
+    alt: 'GitHub icon',
   },
 ];
 
