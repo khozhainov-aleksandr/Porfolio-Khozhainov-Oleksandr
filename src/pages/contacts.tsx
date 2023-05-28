@@ -15,28 +15,28 @@ export default function Contacts() {
     <div className={styles.contacts}>
       <Menu />
       <Container>
-        <div className="contacts__wrapper">
-          <div className="contacts__photo">
+        <div className={styles.mainWrapper}>
+          <div className={styles.myPhotoWrapper}>
             <Image
+            className={styles.myPhoto}
               src={myPhoto}
               alt="My Photo"
-              width={140}
-              height={200}
             />
           </div>
-          <div className="contacts__descr">
+          <div className={styles.descriptionWrapper}>
             <h1 className={styles.mainTitle}>
               My Contacts
             </h1>
             <Divider position='start' />
 
-            <div className="title title_fz14 contacts__text">
+            <p className={styles.text}>
               Any way convenient for you:
-            </div>
-            <div className="contacts__social">
+            </p>
+            <div className={styles.socialWrapper}>
               {contactsData.map((data, i) => (
                 <Link
-                key={i}
+                  key={i}
+                  className={styles.socialLink}
                   href={data.link}
                   target="_blank"
                 >
@@ -49,11 +49,11 @@ export default function Contacts() {
                 </Link>
               ))}
             </div>
-            <div className="title title_fz14 contacts__text">
+            <p className={styles.text}>
               Or leave your details and I will write to you myself:
-            </div>
-            <form action="#" className="contacts__form">
-              <div className="contacts__input">
+            </p>
+            <form action="#" className={styles.form}>
+              <div className={styles.inputWrapper}>
                 <input
                   required
                   name="name"
@@ -64,7 +64,7 @@ export default function Contacts() {
                   Your Name
                 </label>
               </div>
-              <div className="contacts__input">
+              <div className={styles.inputWrapper}>
                 <input
                   required
                   name="email"
@@ -76,19 +76,19 @@ export default function Contacts() {
                 </label>
               </div>
 
-              <div className="contacts__textarea">
+              <div className={styles.textAreaWrapper}>
                 <textarea name="text" id="text"></textarea>
                 <label htmlFor="text">
                   Your message for Me
                 </label>
               </div>
-              <div className="contacts__triggers">
-                <button className="contacts__btn btn">
+              <div className={styles.triggers}>
+                <button className={styles.button}>
                   Send message
                 </button>
-                <div className="contacts__policy">
+                <div className={styles.policyWrapper}>
                   <input required type="checkbox"/ >
-                  <span>I agree with the 
+                  <span>{'I agree with the '} 
                     <Link href="./doc/policy.html" target="_blank">
                       privacy policy
                     </Link> 
