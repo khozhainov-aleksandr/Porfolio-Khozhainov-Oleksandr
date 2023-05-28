@@ -43,8 +43,8 @@ export default function Contacts() {
                   <Image
                     src={data.img}
                     alt={data.alt}
-                    width={20}
-                    height={20}
+                    width={30}
+                    height={30}
                   />
                 </Link>
               ))}
