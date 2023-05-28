@@ -89,7 +89,7 @@ export default function Contacts() {
                 <div className={styles.policyWrapper}>
                   <input required type="checkbox"/ >
                   <span>{'I agree with the '} 
-                    <Link href="./doc/policy.html" target="_blank">
+                    <Link href="/policy" target="_blank">
                       privacy policy
                     </Link> 
                   </span>
