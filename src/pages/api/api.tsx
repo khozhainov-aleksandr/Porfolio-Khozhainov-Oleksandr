@@ -65,7 +65,7 @@ import GitHubIcon from '@/icon/social/github.svg';
 
 export const myPhone: string = '+31617200901';
 export const myEmail: string = 'khozhainov.aleksandr@gmail.com';
-export const myResume: string = 'https://drive.google.com/file/d/14WhBfjpDdpD4AntjGS4aOV03Hxxe_Xi7/view?usp=sharing';
+export const myResume: string = 'https://drive.google.com/file/d/1xp7kIVdwRx_yV4wNcBTuykj_PClTeT7l/view?usp=sharing';
 
 export const currentCity: string = 'Overloon';
 export const currentCityLink: string = 'https://goo.gl/maps/Vr5FiSH98SusUKct5';
