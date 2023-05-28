@@ -67,7 +67,12 @@ export const Menu: React.FC = () => {
                 href={data.link}
                 target="_blank"
               >
-                {data.icon}
+                <Image
+                  src={data.icon}
+                  alt={data.alt}
+                  height={40}
+                  width={40}
+                />
               </Link>
             ))}
           </div>
