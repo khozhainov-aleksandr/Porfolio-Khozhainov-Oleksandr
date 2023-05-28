@@ -128,3 +128,87 @@
     margin-right: 10px;
   }
 }
+
+// ! Start @media
+
+@media (max-width: 1200px) {
+  .mainWrapper {
+    padding: 0;
+    grid-template-columns: 400px 520px;
+  }
+
+  .form {
+    grid-template: 45px 190px 45px / repeat(2, 250px);
+  }
+}
+
+@media (max-width: 992px) {
+  .mainWrapper {
+    grid-template-columns: 300px 400px;
+  }
+
+  .myPhoto {
+    width: 110%;
+  }
+
+  .form {
+    grid-template: 45px 190px 45px / repeat(2, 195px);
+  }
+
+  .button {
+    padding: 8px 25px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    margin-top: 80px;
+  }
+
+  .myPhoto {
+    display: none;
+  }
+
+  .mainWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .form {
+    grid-template: 45px 190px 45px / repeat(2, 250px);
+  }
+}
+
+@media (max-width: 576px) {
+  .contacts {
+    margin-bottom: 50px;
+  }
+
+  .form {
+    grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+  }
+
+  .textAreaWrapper {
+    grid-column: unset;
+    width: 100%;
+  }
+
+  .triggers {
+    grid-column: unset;
+    grid-template-columns: 1fr;
+    column-gap: unset;
+    row-gap: 20px;
+  }
+
+  .button {
+    order: 2;
+    max-width: 220px;
+    margin: 0 auto;
+  }
+
+  .policyWrapper {
+    width: 190px;
+    margin: 0 auto;
+    line-height: 18px;
+  }
+}
