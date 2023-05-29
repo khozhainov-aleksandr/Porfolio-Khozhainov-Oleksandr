@@ -1,16 +1,22 @@
+import Head from 'next/head';
 import Image from 'next/image';
-
-import { skillsCardsData } from './api';
+import { metaPropertyData, skillsCardsData } from './api';
 import { Menu } from '@/components/Menu';
 import { SocialNetworkSidebar } from '@/components/SocialNetworkSidebar';
 import { Container } from '@/components/Container';
 import { Divider } from '@/components/Divider';
-
 import styles from '@/styles/Skills.module.scss'
 
 export default function Skills() {
   return (
     <div className={styles.skills}>
+      <Head>
+        <title>Skills</title>
+        <meta name='title' content={metaPropertyData.siteName} />
+        <meta name='description' content={metaPropertyData.description} />
+        <meta name='keywords' content={metaPropertyData.keywords} />
+        <meta name='author' content={metaPropertyData.author} />
+      </Head>
       <Menu />
       <Container>
         <h1 className={styles.mainTitle}>
