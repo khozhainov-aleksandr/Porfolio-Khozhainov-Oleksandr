@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link'
-import { metaPropertyData } from './api/api';
+import { metaPropertyData } from './api';
 import { Menu } from '@/components/Menu';
 import { SocialNetworkSidebar } from '@/components/SocialNetworkSidebar';
 import { Container } from '@/components/Container';

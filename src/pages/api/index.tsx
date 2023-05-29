@@ -6,6 +6,7 @@ export {
   currentCityLink,
   currentCountry,
   currentCountryLink,
+  metaPropertyData,
   menuData,
   aboutSkillsData,
   socialNetworkData,

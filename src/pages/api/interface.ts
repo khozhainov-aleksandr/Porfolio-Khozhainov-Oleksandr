@@ -1,3 +1,14 @@
+export interface MetaPropertyData {
+  title: string;
+  author: string;
+  siteName: string;
+  description: string;
+  keywords: string;
+  type: string;
+  url: string;
+  image: string;
+};
+
 export interface MenuData {
   title: string;
   link: string;

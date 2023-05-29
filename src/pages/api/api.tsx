@@ -1,6 +1,7 @@
 import {
   SocialNetworkData,
   AboutSkillsData,
+  MetaPropertyData,
   MenuData,
   EducationData,
   ImagesData,
@@ -77,7 +78,7 @@ export const currentCountryLink: string = 'https://goo.gl/maps/qD7YN28kcfJLaDqi8
 
 // ! --- --- --- --- ---
 
-export const metaPropertyData = {
+export const metaPropertyData: MetaPropertyData = {
   title: 'Portfolio',
   author: 'Khozhainov Oleksandr',
   siteName: 'Portfolio: Khozhainov Oleksandr | React Developer',
