@@ -1,6 +1,7 @@
+import Head from 'next/head';
 import Link from 'next/link'
 import Image from 'next/image';
-import { aboutSkillsData, myResume } from './api';
+import { metaPropertyData, aboutSkillsData, myResume } from './api';
 import { Menu } from '@/components/Menu';
 import { SocialNetworkSidebar } from '@/components/SocialNetworkSidebar';
 import { Container } from '@/components/Container';
@@ -9,11 +10,18 @@ import { Divider } from '@/components/Divider';
 import MyPhotoImg from '@/img/my_photo/my_photo_header.jpg';
 import { MdLocationPin } from "react-icons/md";
 import { MdCloudDownload } from "react-icons/md";
-import styles from '@/styles/AboutMe.module.scss'
+import styles from '@/styles/AboutMe.module.scss';
 
 export default function AboutMe() {
   return (
     <div className={styles.about}>
+      <Head>
+        <title>About me</title>
+        <meta name='title' content={metaPropertyData.siteName} />
+        <meta name='description' content={metaPropertyData.description} />
+        <meta name='keywords' content={metaPropertyData.keywords} />
+        <meta name='author' content={metaPropertyData.author} />
+      </Head>
       <Menu />
       <SocialNetworkSidebar />
       <Container>
