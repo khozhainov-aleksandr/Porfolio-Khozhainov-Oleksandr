@@ -15,7 +15,6 @@ export default function Home() {
         <meta name='description' content={metaPropertyData.description} />
         <meta name='keywords' content={metaPropertyData.keywords} />
         <meta name='author' content={metaPropertyData.author} />
-
         <meta property="og:title" content={metaPropertyData.siteName} />
         <meta property="og:description" content={metaPropertyData.description} />
         <meta property="og:type" content={metaPropertyData.type} />
@@ -24,28 +23,26 @@ export default function Home() {
       </Head>
       <Menu />
       <Container>
-        <>
-          <div className={styles.subTitle}>
-            My name is Oleksandr Khozhainov
-          </div>
-          <h1 className={styles.title}>
-            I am a React Developer <br /> from Odessa
-          </h1>
-          <div className={styles.btnWrapper}>
-            <Link
-              className={styles.btnLinkColored}
-              href='/portfolio'
-            >
-              Portfolio
-            </Link>
-            <Link
-              className={styles.btnLink}
-              href='/about-me'
-            >
-              About me
-            </Link>
-          </div>
-        </>
+        <div className={styles.subTitle}>
+          My name is Oleksandr Khozhainov
+        </div>
+        <h1 className={styles.title}>
+          I am a React Developer <br /> from Odessa
+        </h1>
+        <div className={styles.btnWrapper}>
+          <Link
+            className={styles.btnLinkColored}
+            href='/portfolio'
+          >
+            Portfolio
+          </Link>
+          <Link
+            className={styles.btnLink}
+            href='/about-me'
+          >
+            About me
+          </Link>
+        </div>
       </Container>
       <SocialNetworkSidebar />
     </div>
