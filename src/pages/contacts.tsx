@@ -1,18 +1,24 @@
+import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
-
-import { contactsData } from './api';
+import { metaPropertyData, contactsData } from './api';
 import { Menu } from '@/components/Menu';
 import { SocialNetworkSidebar } from '@/components/SocialNetworkSidebar';
 import { Container } from '@/components/Container';
 import { Divider } from '@/components/Divider';
-
 import myPhoto from '../img/my_photo/my_photo_footer.jpg';
 import styles from '@/styles/Contacts.module.scss'
 
 export default function Contacts() {
   return (
     <div className={styles.contacts}>
+      <Head>
+        <title>Contacts</title>
+        <meta name='title' content={metaPropertyData.siteName} />
+        <meta name='description' content={metaPropertyData.description} />
+        <meta name='keywords' content={metaPropertyData.keywords} />
+        <meta name='author' content={metaPropertyData.author} />
+      </Head>
       <Menu />
       <Container>
         <div className={styles.mainWrapper}>
@@ -28,7 +34,6 @@ export default function Contacts() {
               My Contacts
             </h1>
             <Divider position='start' />
-
             <p className={styles.text}>
               Any way convenient for you:
             </p>
@@ -75,7 +80,6 @@ export default function Contacts() {
                   Your Email
                 </label>
               </div>
-
               <div className={styles.textAreaWrapper}>
                 <textarea name="text" id="text"></textarea>
                 <label htmlFor="text">
@@ -98,7 +102,6 @@ export default function Contacts() {
             </form>
           </div>
         </div>
-        
       </Container>
       <SocialNetworkSidebar />
     </div>
