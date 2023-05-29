@@ -13,6 +13,8 @@ import { MdAnchor } from "react-icons/md";
 import { GiDiploma } from "react-icons/gi";
 import { IoSchoolOutline, IoFastFoodOutline } from "react-icons/io5";
 
+import metaImg from '@/img/meta/pic_meta.jpg';
+
 import imgHillelBasic from '@/img/certificates/Hillel__Front-End_Basic-min.jpg';
 import imgHillelPro from '@/img/certificates/Hillel__Front-End_Pro-min.jpg';
 import imgUdemyBasicsHtml from '@/img/certificates/Udemy__Basics-of-HTML-Course-min.jpg';
@@ -74,6 +76,17 @@ export const currentCountry: string = 'Netherlands';
 export const currentCountryLink: string = 'https://goo.gl/maps/qD7YN28kcfJLaDqi8';
 
 // ! --- --- --- --- ---
+
+export const metaPropertyData = {
+  title: 'Portfolio',
+  author: 'Khozhainov Oleksandr',
+  siteName: 'Portfolio: Khozhainov Oleksandr | React Developer',
+  description: 'My Education and Certificate, Skills, which I use in my Projects, Works and Contacts.',
+  keywords: 'React, Redux, Next.js, MUI React, TypeScript, JavaScript, HTML5, CSS3, CSS Modules, Styled Components, Sass, BEM, Bootstrap, Fetch, REST API, WebSocket, Figma, Avocode, Photoshop, Git flow, GitHub, VS Code, WebStorm, Chrome Developer Tools, NPM, Yarn, Webpack, Jira',
+  type: 'website',
+  url: 'https://porfolio-khozhainov-oleksandr.vercel.app',
+  image: metaImg.src,
+};
 
 export const menuData: MenuData[] = [
   {
