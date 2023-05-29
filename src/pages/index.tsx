@@ -4,7 +4,6 @@ import { metaPropertyData } from './api';
 import { Menu } from '@/components/Menu';
 import { SocialNetworkSidebar } from '@/components/SocialNetworkSidebar';
 import { Container } from '@/components/Container';
-import metaImg from '@/img/meta/pic_meta.png';
 import styles from '@/styles/Home.module.scss'
 
 export default function Home() {
@@ -13,12 +12,12 @@ export default function Home() {
       <Head>
         <title>{metaPropertyData.title}</title>
         <meta name='title' content={metaPropertyData.siteName} />
-        <meta name='description' content={metaPropertyData.description} />
+        <meta name='description' content='My Education and Certificate, Skills, which I use in my Projects, Works and Contacts.' />
         <meta name='keywords' content={metaPropertyData.keywords} />
         <meta name='author' content={metaPropertyData.author} />
 
         <meta property="og:title" content={metaPropertyData.siteName} />
-        <meta property="og:description" content={metaPropertyData.description} />
+        <meta property="og:description" content='My Education and Certificate, Skills, which I use in my Projects, Works and Contacts.' />
         <meta property="og:type" content={metaPropertyData.type} />
         <meta property="og:url" content={metaPropertyData.url} />
         <meta property="og:image" content={metaPropertyData.image} />
