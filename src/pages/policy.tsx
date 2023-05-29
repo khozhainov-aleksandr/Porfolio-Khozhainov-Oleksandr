@@ -1,4 +1,6 @@
+import Head from 'next/head';
 import Link from 'next/link';
+import { metaPropertyData } from './api';
 import { Menu } from '@/components/Menu';
 import { SocialNetworkSidebar } from '@/components/SocialNetworkSidebar';
 import { Container } from '@/components/Container';
@@ -7,6 +9,13 @@ import styles from '@/styles/Policy.module.scss'
 export default function Policy() {
   return (
     <div className={styles.policy}>
+      <Head>
+        <title>Privacy Policy</title>
+        <meta name='title' content={metaPropertyData.siteName} />
+        <meta name='description' content={metaPropertyData.description} />
+        <meta name='keywords' content={metaPropertyData.keywords} />
+        <meta name='author' content={metaPropertyData.author} />
+      </Head>
       <Menu />
       <Container>
         <h1>Privacy Policy for Portfolio - Oleksandr Khozhainov</h1>
