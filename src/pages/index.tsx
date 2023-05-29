@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link'
+import { metaPropertyData } from './api/api';
 import { Menu } from '@/components/Menu';
 import { SocialNetworkSidebar } from '@/components/SocialNetworkSidebar';
 import { Container } from '@/components/Container';
@@ -10,12 +11,17 @@ export default function Home() {
   return (
     <div className={styles.promo}>
       <Head>
-        <title>Portfolio</title>
-        <meta name='title' content='Portfolio: Khozhainov Oleksandr' />
-        <meta name='description' content='My Education and Certificate, Skills, which I use in my Projects, Works and Contacts.' />
-        <meta property='type' content='website' />
-        <meta property='url' content='https://porfolio-khozhainov-oleksandr.vercel.app' />
-        <meta property='image' content={metaImg.src} />
+        <title>{metaPropertyData.title}</title>
+        <meta name='title' content={metaPropertyData.siteName} />
+        <meta name='description' content={metaPropertyData.description} />
+        <meta name='keywords' content={metaPropertyData.keywords} />
+        <meta name='author' content={metaPropertyData.author} />
+
+        <meta property="og:title" content={metaPropertyData.siteName} />
+        <meta property="og:description" content={metaPropertyData.description} />
+        <meta property="og:type" content={metaPropertyData.type} />
+        <meta property="og:url" content={metaPropertyData.url} />
+        <meta property="og:image" content={metaPropertyData.image} />
       </Head>
       <Menu />
       <Container>
