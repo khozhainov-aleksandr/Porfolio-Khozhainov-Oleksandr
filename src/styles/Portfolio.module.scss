@@ -8,7 +8,7 @@
   font-weight: var(--title-weight);
   line-height: var(--title-height);
 }
-
+.Dzencode,
 .Rootz,
 .EcoCosmetics,
 .MyBiKE,
@@ -29,17 +29,24 @@
   gap: 0 20px;
 
   grid-template-areas:
-    'Rootz            Rootz       Rootz'
+    'Dzencode         Dzencode    Rootz'
     'EcoCosmetics     MyBiKE      MyBiKE'
     'EcoCosmetics     Uber        Uber'
     'RunSmart         RunSmart    Netclicks'
     'FirstPortfolio   ActiveBox   Netclicks';
 }
 
+.Dzencode {
+  grid-area: Dzencode;
+  & .picture {
+    object-position: 0px 0px;
+  }
+}
+
 .Rootz {
   grid-area: Rootz;
   & .picture {
-    object-position: 0px -20px;
+    object-position: -370px 0px;
   }
 }
 
