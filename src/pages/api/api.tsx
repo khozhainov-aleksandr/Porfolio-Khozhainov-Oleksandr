@@ -47,6 +47,7 @@ import ResponsiveDesignIcon from '@/icon/skills/responsive.svg';
 import SVGIcon from '@/icon/skills/svg.svg';
 import PhotoshopIcon from '@/icon/skills/photoshop.svg';
 
+import DzencodePicture from '@/img/works/Dzencode.jpg';
 import RootzPicture from '@/img/works/Rootz.jpg';
 import EcoCosmeticsPicture from '@/img/works/Eco-Cosmetics.jpg';
 import MyBiKEPicture from '@/img/works/MyBiKE.jpg';
@@ -366,6 +367,12 @@ export const skillsCardsData: SkillsCardsData[] = [
 ];
 
 export const portfolioData: PortfolioData[] = [
+  {
+    className: 'Dzencode',
+    link: 'https://test-task-deploy-29-04-2023.vercel.app',
+    img: DzencodePicture.src,
+    alt: 'Dzencode Project picture',
+  },
   {
     className: 'Rootz',
     link: 'https://my-project-rootz.vercel.app',
