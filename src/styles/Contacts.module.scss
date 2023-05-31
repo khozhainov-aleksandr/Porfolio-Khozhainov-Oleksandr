@@ -132,6 +132,85 @@
   }
 }
 
+.popUpWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+}
+
+.popUp {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 28px 36px;
+  width: 640px;
+  background-color: #fff;
+  border: 2px solid var(--main-color);
+  border-radius: 8px;
+  z-index: 20;
+
+  p {
+    font-size: var(--title_fz16-size);
+    line-height: var(--title_fz16-height);
+    color: var(--black-color-text);
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.popUpUserDataWrapper {
+  margin-bottom: 14px;
+
+  p {
+    margin-bottom: 2px;
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+  }
+
+  span {
+    color: #606060;
+    font-weight: var(--title-weight);
+  }
+}
+
+.popUpDescription {
+  margin-top: 14px;
+  p {
+    margin-bottom: 10px;
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.copyBtn {
+  margin: 0 6px;
+  padding: 0 6px;
+  border: 1px solid #000;
+  background-color: rgba(128, 128, 128, 0.1);
+  border-radius: 4px;
+}
+
+.copyBtnActive {
+  margin: 0 6px;
+  padding: 0 6px;
+  border: 1px solid #00b01a;
+  background-color: rgba(0, 255, 64, 0.1);
+  border-radius: 4px;
+}
+
 // ! Start @media
 
 @media (max-width: 1200px) {
