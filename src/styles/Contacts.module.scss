@@ -204,11 +204,11 @@
 }
 
 .copyBtnActive {
-  margin: 0 6px;
-  padding: 0 6px;
   border: 1px solid #00b01a;
   background-color: rgba(0, 255, 64, 0.1);
-  border-radius: 4px;
+  transition:
+    border 0.3s ease,
+    background-color 0.3s ease;
 }
 
 // ! Start @media

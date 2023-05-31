@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import classnames from 'classnames';
 import { useEffect, useState } from 'react';
 import { IoCloseCircle } from 'react-icons/io5';
 import { contactsData, myEmail } from './api';
@@ -16,6 +17,7 @@ export default function Contacts() {
   const [message, setMessage] = useState<string>('');
   const [checkBox, setCheckBox] = useState<boolean>(false);
   const [button, setButton] = useState<boolean>(true);
+  const [activeCopyBtn, setActiveCopyBtn] = useState<boolean>(false);
   const [popUp, setPopUp] = useState<boolean>(false);
 
   useEffect(() => {
@@ -39,6 +41,7 @@ export default function Contacts() {
     setEmail('');
     setMessage('');
     setCheckBox(false);
+    setActiveCopyBtn(false);
     setPopUp(false);
   }
 
@@ -170,7 +173,15 @@ export default function Contacts() {
               <p>Sending a message is not working at the moment, we apologize.</p>
               <p>
                 We invite you to
-                <button className={styles.copyBtn}>
+                <button
+                  className={classnames(styles.copyBtn, {
+                    [styles.copyBtnActive]: activeCopyBtn
+                  })}
+                  onClick={() => {
+                    setActiveCopyBtn(true);
+                    navigator.clipboard.writeText(message);
+                  }}
+                >
                   copy your message
                 </button>
                 and send it directly to
