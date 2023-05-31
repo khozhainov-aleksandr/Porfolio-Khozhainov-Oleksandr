@@ -1,9 +1,10 @@
+import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import classnames from 'classnames';
 import { useEffect, useState } from 'react';
 import { IoCloseCircle } from 'react-icons/io5';
-import { contactsData, myEmail } from './api';
+import { metaPropertyData, contactsData, myEmail } from './api';
 import { Menu } from '@/components/Menu';
 import { SocialNetworkSidebar } from '@/components/SocialNetworkSidebar';
 import { Container } from '@/components/Container';
@@ -47,6 +48,13 @@ export default function Contacts() {
 
   return (
     <div className={styles.contacts}>
+      <Head>
+        <title>Contacts</title>
+        <meta name='title' content={metaPropertyData.siteName} />
+        <meta name='description' content={metaPropertyData.description} />
+        <meta name='keywords' content={metaPropertyData.keywords} />
+        <meta name='author' content={metaPropertyData.author} />
+      </Head>
       <Menu />
       <Container>
         <div className={styles.mainWrapper}>
