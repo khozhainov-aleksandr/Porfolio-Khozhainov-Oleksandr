@@ -1,16 +1,46 @@
 import Link from 'next/link';
 import Image from 'next/image';
-
-import { contactsData } from './api';
+import { useEffect, useState } from 'react';
+import { IoCloseCircle } from "react-icons/io5";
+import { contactsData, myEmail } from './api';
 import { Menu } from '@/components/Menu';
 import { SocialNetworkSidebar } from '@/components/SocialNetworkSidebar';
 import { Container } from '@/components/Container';
 import { Divider } from '@/components/Divider';
-
 import myPhoto from '../img/my_photo/my_photo_footer.jpg';
 import styles from '@/styles/Contacts.module.scss'
 
 export default function Contacts() {
+  const [name, setName] = useState<string>('');
+  const [email, setEmail] = useState<string>('');
+  const [message, setMessage] = useState<string>('');
+  const [checkBox, setCheckBox] = useState<boolean>(false);
+  const [button, setButton] = useState<boolean>(true);
+  const [popUp, setPopUp] = useState<boolean>(false);
+
+  console.log('✅', checkBox);
+
+  useEffect(() => {
+    const checkName = name.length >= 1;
+    const checkMassage = message.length >= 1;
+    const checkEmail = email.match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+
+    (checkName && checkMassage && checkEmail && checkBox)
+      ? setButton(false)
+      : setButton(true);
+  }, [name, email, message, checkBox])
+
+  const pushButton = () => {
+    setPopUp(true);
+    // setName('');
+    // setEmail('');
+    // setMessage('');
+  }
+
+  const closePopUp = () => {
+    setPopUp(false);
+  }
+
   return (
     <div className={styles.contacts}>
       <Menu />
@@ -28,7 +58,6 @@ export default function Contacts() {
               My Contacts
             </h1>
             <Divider position='start' />
-
             <p className={styles.text}>
               Any way convenient for you:
             </p>
@@ -52,42 +81,64 @@ export default function Contacts() {
             <p className={styles.text}>
               Or leave your details and I will write to you myself:
             </p>
-            <form action="#" className={styles.form}>
+            <form onSubmit={(e) => e.preventDefault()} className={styles.form}>
               <div className={styles.inputWrapper}>
-                <input
-                  required
-                  name="name"
-                  id="name"
-                  type="text"
-                />
                 <label htmlFor="name">
                   Your Name
                 </label>
-              </div>
-              <div className={styles.inputWrapper}>
                 <input
                   required
-                  name="email"
-                  id="email"
-                  type="email"
+                  type="text"
+                  name="name"
+                  value={name}
+                  onChange={(e) => {
+                    setName(e.target.value);
+                  }}
                 />
+              </div>
+              <div className={styles.inputWrapper}>
                 <label htmlFor="email">
                   Your Email
                 </label>
+                <input
+                  required
+                  type="email"
+                  name="email"
+                  value={email}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
+                />
               </div>
-
               <div className={styles.textAreaWrapper}>
-                <textarea name="text" id="text"></textarea>
                 <label htmlFor="text">
                   Your message for Me
                 </label>
+                <textarea
+                  name="text"
+                  value={message}
+                  onChange={(e) => {
+                    setMessage(e.target.value);
+                  }}
+                />
               </div>
               <div className={styles.triggers}>
-                <button className={styles.button}>
+                <button
+                  className={styles.button}
+                  disabled={button}
+                  onClick={pushButton}
+                >
                   Send message
                 </button>
                 <div className={styles.policyWrapper}>
-                  <input required type="checkbox"/ >
+                  <input
+                    type='checkbox'
+                    checked={checkBox}
+                    onChange={(event) => {
+                      setCheckBox(event.target.checked);
+                    }}
+                    required
+                  />
                   <span>{'I agree with the '} 
                     <Link href="./doc/policy.html" target="_blank">
                       privacy policy
@@ -98,9 +149,42 @@ export default function Contacts() {
             </form>
           </div>
         </div>
-        
       </Container>
       <SocialNetworkSidebar />
+      {popUp && (
+        <div className={styles.popUpWrapper}>
+          <div className={styles.popUp}>
+            <IoCloseCircle
+              className={styles.closeBtn}
+              size={32}
+              onClick={closePopUp}
+            />
+            <div className={styles.popUpUserDataWrapper}>
+              <p><span>Name:</span> {name}</p>
+              <p><span>Email:</span> {email}</p>
+              <p className={styles.popUpMessage}><span>Message:</span> {message}</p>
+            </div>
+            <Divider position='center' />
+            <div className={styles.popUpDescription}>
+              <p>Sending a message is not working at the moment, we apologize.</p>
+              <p>
+                We invite you to
+                <button className={styles.copyBtn}>
+                  copy your message
+                </button>
+                and send it directly to
+                <Link href={`mailto:${myEmail}`} target="_blank">
+                  {' My Email '}
+                </Link>
+                and
+                <br />
+                I will answer you as soon as possible.
+              </p>
+              <p>Thank you for understanding. Best regards Oleksandr Khozhainov.</p>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
