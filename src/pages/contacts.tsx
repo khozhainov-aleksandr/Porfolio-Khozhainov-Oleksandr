@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import { IoCloseCircle } from "react-icons/io5";
+import { IoCloseCircle } from 'react-icons/io5';
 import { contactsData, myEmail } from './api';
 import { Menu } from '@/components/Menu';
 import { SocialNetworkSidebar } from '@/components/SocialNetworkSidebar';
 import { Container } from '@/components/Container';
 import { Divider } from '@/components/Divider';
-import myPhoto from '../img/my_photo/my_photo_footer.jpg';
+import myPhoto from '@/img/my_photo/my_photo_footer.jpg';
 import styles from '@/styles/Contacts.module.scss'
 
 export default function Contacts() {
@@ -18,12 +18,12 @@ export default function Contacts() {
   const [button, setButton] = useState<boolean>(true);
   const [popUp, setPopUp] = useState<boolean>(false);
 
-  console.log('✅', checkBox);
-
   useEffect(() => {
     const checkName = name.length >= 1;
     const checkMassage = message.length >= 1;
-    const checkEmail = email.match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+    const checkEmail = email.match(
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
 
     (checkName && checkMassage && checkEmail && checkBox)
       ? setButton(false)
@@ -32,12 +32,13 @@ export default function Contacts() {
 
   const pushButton = () => {
     setPopUp(true);
-    // setName('');
-    // setEmail('');
-    // setMessage('');
   }
 
   const closePopUp = () => {
+    setName('');
+    setEmail('');
+    setMessage('');
+    setCheckBox(false);
     setPopUp(false);
   }
 
@@ -50,7 +51,7 @@ export default function Contacts() {
             <Image
             className={styles.myPhoto}
               src={myPhoto}
-              alt="My Photo"
+              alt='My Photo'
             />
           </div>
           <div className={styles.descriptionWrapper}>
@@ -67,7 +68,7 @@ export default function Contacts() {
                   key={i}
                   className={styles.socialLink}
                   href={data.link}
-                  target="_blank"
+                  target='_blank'
                 >
                   <Image
                     src={data.img}
@@ -83,13 +84,13 @@ export default function Contacts() {
             </p>
             <form onSubmit={(e) => e.preventDefault()} className={styles.form}>
               <div className={styles.inputWrapper}>
-                <label htmlFor="name">
+                <label htmlFor='name'>
                   Your Name
                 </label>
                 <input
                   required
-                  type="text"
-                  name="name"
+                  type='text'
+                  name='name'
                   value={name}
                   onChange={(e) => {
                     setName(e.target.value);
@@ -97,13 +98,13 @@ export default function Contacts() {
                 />
               </div>
               <div className={styles.inputWrapper}>
-                <label htmlFor="email">
+                <label htmlFor='email'>
                   Your Email
                 </label>
                 <input
                   required
-                  type="email"
-                  name="email"
+                  type='email'
+                  name='email'
                   value={email}
                   onChange={(e) => {
                     setEmail(e.target.value);
@@ -111,11 +112,11 @@ export default function Contacts() {
                 />
               </div>
               <div className={styles.textAreaWrapper}>
-                <label htmlFor="text">
+                <label htmlFor='text'>
                   Your message for Me
                 </label>
                 <textarea
-                  name="text"
+                  name='text'
                   value={message}
                   onChange={(e) => {
                     setMessage(e.target.value);
@@ -140,7 +141,7 @@ export default function Contacts() {
                     required
                   />
                   <span>{'I agree with the '} 
-                    <Link href="./doc/policy.html" target="_blank">
+                    <Link href='./doc/policy.html' target='_blank'>
                       privacy policy
                     </Link> 
                   </span>
@@ -173,7 +174,7 @@ export default function Contacts() {
                   copy your message
                 </button>
                 and send it directly to
-                <Link href={`mailto:${myEmail}`} target="_blank">
+                <Link href={`mailto:${myEmail}`} target='_blank'>
                   {' My Email '}
                 </Link>
                 and
