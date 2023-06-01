@@ -112,17 +112,92 @@
   }
 }
 
+// ! Start @media
+
 @media (max-width: 1200px) {
   .linkWrapper {
-    grid-template-columns: repeat(auto-fit, 280px);
-    grid-auto-rows: 280px;
-    justify-content: space-around;
-    row-gap: 35px;
+    grid-template-columns: repeat(2, 380px);
+    grid-template-rows: repeat(9, 280px);
+    gap: 10px;
+  
+    grid-template-areas:
+      'Dzencode        Dzencode'
+      'Rootz           Rootz'
+      'EcoCosmetics    EcoCosmetics'
+      'MyBiKE          MyBiKE'
+      'Uber            Uber'
+      'RunSmart        RunSmart'
+      'FirstPortfolio  FirstPortfolio'
+      'ActiveBox       ActiveBox'
+      'Netclicks       Netclicks';
+  }
 
-    .horizonal,
-    .vertical {
-      grid-row: unset;
-      grid-column: unset;
-    }
+  .Rootz .picture {
+    object-position: -130px 0px;
+  }
+
+  .MyBiKE .picture {
+    object-position: 0px -100px;
+  }
+
+  .FirstPortfolio .picture {
+    object-position: 0px -86px;
+  }
+}
+
+@media (max-width: 780px) {
+  .linkWrapper {
+    grid-template-columns: repeat(1, 380px);
+    grid-template-rows: repeat(9, 200px);
+
+    grid-template-areas:
+      'Dzencode'
+      'Rootz'
+      'EcoCosmetics'
+      'MyBiKE'
+      'Uber'
+      'RunSmart'
+      'FirstPortfolio'
+      'ActiveBox'
+      'Netclicks';
+  }
+
+  .MyBiKE .picture {
+    object-position: 0px 0px;
+  }
+
+  .Uber .picture {
+    object-position: 0px -118px;
+  }
+
+  .FirstPortfolio .picture {
+    object-position: 0px -94px;
+  }
+}
+
+@media (max-width: 400px) {
+  .linkWrapper {
+    grid-template-columns: repeat(1, 300px);
+    gap: 0;
+  }
+
+  .Rootz .picture {
+    object-position: -176px 0px;
+  }
+
+  .MyBiKE .picture {
+    object-position: -24px 0px;
+  }
+
+  .Uber .picture {
+    object-position: 0px -74px;
+  }
+
+  .FirstPortfolio .picture {
+    object-position: 0px -14px;
+  }
+
+  .Netclicks .picture {
+    object-position: 2px -30px;
   }
 }
