@@ -74,11 +74,14 @@
   }
 }
 
+// ! Start @media
+
 @media (max-width: 576px) {
   .itemsWrapper {
     margin-top: 40px;
   }
 }
+
 @media (max-width: 338px) {
   .mainTitle {
     font-size: var(--title_fz30-size);
